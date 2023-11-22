@@ -4,6 +4,16 @@ import (
 	"fmt"
 )
 
+type Cor int
+
+const (
+    Vermelho Cor = iota
+    Verde
+    Azul
+    Amarelo
+    Laranja
+)
+
 func main() {
 	var nome string = "Cleiton"
 	var idade int = 20
