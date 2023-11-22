@@ -155,7 +155,7 @@ func main() {
 	}
 	fmt.Println()
 
-  // ARRAY
+  	// ARRAY
 	fmt.Println("### ARRAY ###")
 	numbers := []int{10, 20, 30, 40}
 
@@ -203,11 +203,48 @@ func main() {
 	fmt.Println("Não tem PROCEDURE")
 	fmt.Println()
 
-  // PONTEIRO
-  fmt.Println("### PONTEIRO ###")
-  fmt.Println("Não tem PONTEIRO")
-  fmt.Println("Não é necessário liberar memória manualmente, como em C ou C++. A variável será automaticamente coletada pelo coletor de lixo quando não estiver mais em uso.")
-  fmt.Println()
+	// PONTEIRO
+	fmt.Println("### PONTEIRO ###")
+	fmt.Println("Não tem PONTEIRO")
+	fmt.Println("Não é necessário liberar memória manualmente, como em C ou C++. A variável será automaticamente coletada pelo coletor de lixo quando não estiver mais em uso.")
+	fmt.Println()
+
+	// TRY CATCH
+	fmt.Println("### TRY CATCH ###")
+	fmt.Print("Informe o valor 1 para o dividendo: ")
+	fmt.Scan(&numero1)
+
+	fmt.Print("Informe o valor 2 para o divisor: ")
+	fmt.Scan(&numero2)
+
+	if numero2 == 0 {
+		fmt.Println("Divisão por zero não é permitida!")
+		os.Exit(1)
+	}
+
+	res = numero1 / numero2
+	fmt.Printf("Resultado da divisão: %.2f\n", res)
+  	fmt.Println()
+
+	  // ENUM
+	  fmt.Println("### ENUM ###")
+	  minhaCor := Azul
+	
+	  switch minhaCor {
+	  case Vermelho:
+	      fmt.Println("Minha cor favorita é vermelho.")
+	  case Verde:
+	      fmt.Println("Minha cor favorita é verde.")
+	  case Azul:
+	      fmt.Println("Minha cor favorita é azul.")
+	  case Amarelo:
+	      fmt.Println("Minha cor favorita é amarelo.")
+	  case Laranja:
+	      fmt.Println("Minha cor favorita é laranja.")
+	  default:
+	      fmt.Println("Eu não tenho uma cor favorita.")
+	  }
+	
 }
 
 func soma(a int, b int) int {
