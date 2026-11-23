@@ -30,7 +30,7 @@ Exemplificação da sintaxe geral e básica da Linguagem GO
 ```
 
 ## 👋🏽 DEMO
-[REPLIT](https://replit.com/@cleibp/Basic-Go) 
+|=>
 
 ## Contatos
 
